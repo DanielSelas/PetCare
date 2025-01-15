@@ -1,5 +1,5 @@
 
-
+PetCare:
 
 The PetCare project is an Android-based application with an integrated API service that helps users manage pet-related data, such as pet details, vaccination status, breed, age, and more. The project consists of two main parts:
 	1.	The PetCare Android Application: A mobile app developed to interact with the PetCare API.
@@ -41,29 +41,29 @@ Features
 Usage
 PetCare API
 	1.	Start the Flask API:
-    	•	Navigate to the project directory containing the Flask app.
-    	•	Run python3 app.py in macOS or py app.py in Windows to start the Flask API.
-    	•	The API will be available at http://127.0.0.1:8088.
+    		•	Navigate to the project directory containing the Flask app.
+    		•	Run python3 app.py in macOS or py app.py in Windows to start the Flask API.
+    		•	The API will be available at http://127.0.0.1:8088.
 	2.	API Endpoints:
-    	•	Use tools like Postman or curl to interact with the API:
-    	•	GET all pets: http://127.0.0.1:8088/get_all_pets
-    	•	POST add pet: http://127.0.0.1:8088/add_pet
+	    	•	Use tools like Postman or curl to interact with the API:
+    		•	GET all pets: http://127.0.0.1:8088/get_all_pets
+    		•	POST add pet: http://127.0.0.1:8088/add_pet
 
 PetCare Android Application
 	1.	Clone the repository:
-	    •	Clone this repository to your local machine.
-    	•	Open the project in Android Studio.
+    		•	Clone this repository to your local machine.
+    		•	Open the project in Android Studio.
 	2.	Run the App:
-    	•	In Android Studio, click on Run to launch the app.
-    	•	The app should be connected to the locally running PetCare API.
+    		•	In Android Studio, click on Run to launch the app.
+    		•	The app should be connected to the locally running PetCare API.
 	3.	Using PetCareLib:
-    	•	PetCareLib is included as a module. You can use it to make API calls in your app:
+    		•	PetCareLib is included as a module. You can use it to make API calls in your app:
 
 
 Installation
 	1.	Clone the repository:
         git clone https://github.com/DanielSelas/PetCare.git
-    2.	Navigate to the project folder and install the necessary dependencies.
+    	2.	Navigate to the project folder and install the necessary dependencies.
 	3.	Run the Flask API on your local machine.
 	4.	Open the Android project in Android Studio.
 	5.	Run the app using Android Studio on a physical or virtual device.
