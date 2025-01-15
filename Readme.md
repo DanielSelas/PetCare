@@ -43,12 +43,11 @@ PetCare API
 	1.	Start the Flask API:
     	•	Navigate to the project directory containing the Flask app.
     	•	Run python3 app.py in macOS or py app.py in Windows to start the Flask API.
-    	•	The API will be available at http://127.0.0.1:8088.
+    	•	The API will be available at 
 	2.	API Endpoints:
     	•	Use tools like Postman or curl to interact with the API:
-    	•	GET all pets: http://127.0.0.1:8088/get_all_pets
-    	•	POST add pet: http://127.0.0.1:8088/add_pet
-
+    	•	GET all pets:
+    	•	POST add pet: 
 PetCare Android Application
 	1.	Clone the repository:
 	    •	Clone this repository to your local machine.
