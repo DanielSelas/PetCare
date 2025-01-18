@@ -15,8 +15,7 @@ public class Pet {
     }
 
     // Parameterized constructor
-    public Pet(String _id, String name, String breed, int age, int last_vaccinated, double weight, String gender, boolean microchipped) {
-        this._id = _id;
+    public Pet(String name, String breed, int age, int last_vaccinated, double weight, String gender, boolean microchipped) {
         this.name = name;
         this.breed = breed;
         this.age = age;

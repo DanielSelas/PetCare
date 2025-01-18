@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PetCare</string>
+    <string name="add_pet">add_pet</string>
+    <string name="months_since_last_vaccination">Months Since Last Vaccination</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="gender">Gender</string>
+    <string name="add_pet1">Add Pet</string>
+    <string name="breed">Breed</string>
+    <string name="age">Age</string>
 </resources>
