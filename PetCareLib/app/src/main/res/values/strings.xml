@@ -7,4 +7,15 @@
     <string name="add_pet1">Add Pet</string>
     <string name="breed">Breed</string>
     <string name="age">Age</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="name_of_the_pet">Name of the pet</string>
+    <string name="breed_of_the_pet">Breed of the pet</string>
+    <string name="breed1">Breed</string>
+    <string name="enter_pet_name">Enter pet name</string>
+    <string name="search">Search</string>
+    <string name="fetch_all_pets">Fetch All Pets</string>
+    <string name="search_pet">Search Pet</string>
+    <string name="add_pet2">Add Pet</string>
+    <string name="delete_pet">Delete Pet</string>
+    <string name="update_pet">Update Pet</string>
 </resources>

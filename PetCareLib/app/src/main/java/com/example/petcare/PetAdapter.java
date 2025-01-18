@@ -1,6 +1,5 @@
 package com.example.petcare;
 
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +14,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
-    private List<Pet> pets = new ArrayList<>();
+    private List<Pet> pets;
 
-    public void setPets(List<Pet> pets) {
-        this.pets = pets;
+    // Constructor to initialize the pet list
+    // Empty constructor to initialize with an empty list
+    public PetAdapter() {
+        this.pets = new ArrayList<>();
+    }
+
+    // Constructor to initialize the pet list
+    public PetAdapter(List<Pet> pets) {
+        this.pets = pets != null ? pets : new ArrayList<>(); // Handle null safety
+    }
+
+    public void updatePets(List<Pet> newPets) {
+        this.pets.clear();
+        this.pets.addAll(newPets);
         notifyDataSetChanged();
     }
 
@@ -32,22 +43,23 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull PetViewHolder holder, int position) {
         Pet pet = pets.get(position);
-        holder.name.setText(pet.getName());
-        holder.breed.setText(pet.getBreed());
+        holder.nameTextView.setText(pet.getName());
+        holder.breedTextView.setText(pet.getBreed());
     }
 
     @Override
     public int getItemCount() {
-        return pets.size();
+        return pets != null ? pets.size() : 0;
     }
 
+    // ViewHolder class to hold references to the pet item views
     static class PetViewHolder extends RecyclerView.ViewHolder {
-        TextView name, breed;
+        TextView nameTextView, breedTextView;
 
         public PetViewHolder(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.pet_name);
-            breed = itemView.findViewById(R.id.pet_breed);
+            nameTextView = itemView.findViewById(R.id.pet_name);
+            breedTextView = itemView.findViewById(R.id.pet_breed);
         }
     }
 }

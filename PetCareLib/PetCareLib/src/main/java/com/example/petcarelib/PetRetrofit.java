@@ -11,7 +11,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PetRetrofit {
-    private static final String BASE_URL = "pet-care-five-phi.vercel.app";
+    private static final String BASE_URL = "https://pet-care-five-phi.vercel.app/";
     private static PetRetrofit instance = null;
     private PetAPI petCareApi;
 

@@ -2,6 +2,7 @@ package com.example.petcarelib;
 
 import java.util.List;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
@@ -17,17 +18,17 @@ public interface PetAPI {
     @GET("/get_all_pets")
     Call<List<Pet>> getAllPets();
 
-    @GET("/get_pet/{name}")
+    @GET("get_pet/{name}")
     Call<Pet> getPetByName(@Path("name") String name);
 
     @POST("/add_pet")
-    Call<Void> addPet(@Body Pet pet);
+    Call<ResponseBody> addPet(@Body Pet pet);
 
     @PUT("/update_pet/{name}")
     Call<Void> updatePet(@Path("name") String name, @Body Pet pet);
 
     @DELETE("/delete_pet/{name}")
-    Call<Void> deletePet(@Path("name") String name);
+    Call<ResponseBody> deletePet(@Path("name") String petName);
 
     @GET("/pets_by_breed/{breed}")
     Call<List<Pet>> getPetsByBreed(@Path("breed") String breed);

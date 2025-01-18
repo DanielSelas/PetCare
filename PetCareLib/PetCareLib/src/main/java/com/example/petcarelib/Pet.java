@@ -89,4 +89,15 @@ public class Pet {
     public void setMicrochipped(boolean microchipped) {
         this.microchipped = microchipped;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + "\n" +
+                "Breed: " + breed + "\n" +
+                "Age: " + age + "\n" +
+                "Last Vaccinated: " + last_vaccinated + " months ago\n" +
+                "Weight: " + weight + " kg\n" +
+                "Gender: " + gender + "\n" +
+                "Microchipped: " + (microchipped ? "Yes" : "No");
+    }
 }
