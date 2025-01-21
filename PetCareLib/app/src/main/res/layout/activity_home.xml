@@ -36,4 +36,11 @@
         android:layout_height="wrap_content"
         android:text="@string/update_pet" />
 
+    <Button
+        android:id="@+id/btn_recently_vaccinated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recently Vaccinated Pets"
+        android:layout_marginBottom="16dp" />
+
 </LinearLayout>

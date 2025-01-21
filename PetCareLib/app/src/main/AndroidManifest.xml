@@ -26,10 +26,16 @@
             </intent-filter>
         </activity>
 
-        <!-- MainActivity - For Fetching All Pets -->
+        <!-- MainActivity  -->
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <!-- MainActivity - For Fetching All Pets -->
+        <activity
+            android:name=".FetchAllActivity"
+            android:exported="true" />
+
 
         <!-- AddPetActivity - For Adding New Pets -->
         <activity
@@ -49,6 +55,11 @@
         <!-- DeletePetActivity - For Deleting Pets -->
         <activity
             android:name=".DeletePetActivity"
+            android:exported="true" />
+
+        <!-- RecentlyVaccinatedActivity - For Last Vacinated Pets -->
+        <activity
+            android:name=".RecentlyVaccinatedActivity"
             android:exported="true" />
 
     </application>

@@ -19,10 +19,12 @@ public class HomeActivity extends AppCompatActivity {
         Button btnAddPet = findViewById(R.id.btn_add_pet);
         Button btnDeletePet = findViewById(R.id.btn_delete_pet);
         Button btnUpdatePet = findViewById(R.id.btn_update_pet);
+        Button btnVaciPet = findViewById(R.id.btn_recently_vaccinated);
+
 
         // Set up listeners
         btnFetchAll.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FetchAllActivity.class);
             startActivity(intent);
         });
 
@@ -45,5 +47,11 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this, UpdatePetActivity.class);
             startActivity(intent);
         });
+
+        btnVaciPet.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, RecentlyVaccinatedActivity.class);
+            startActivity(intent);
+        });
+
     }
 }
